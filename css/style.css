@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Staatliches');
+
+body {
+	background-color: #f5f5f5;
+	font-family: 'Lato', sans-serif;
+}
+.row {
+	max-width: 65.65rem;
+}
+.slider-wrapper {
+	margin-top: 75px;
+	background-color: #fff;
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.slide {
+	position: relative;
+}
+.slick-dots {
+    position: absolute;
+    margin: 0;
+    list-style: none;
+    top: 40%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+.slick-dots li {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: rgba(0,0,0,0.15);
+	margin-bottom: 35px;
+	cursor: pointer;
+	font-family: 'Lato', sans-serif;
+}
+li.slick-active {
+	color: #000;
+}
+.slide-img {
+	margin: 25px;
+}
+.slide-img img {
+	width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.slider-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 600px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.slide-title {
+	font-family: 'Staatliches', cursive;
+	color: #c74c4c;
+	font-size: 6.375rem;
+	text-transform: uppercase;
+	line-height: 6.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    left: -35%;
+}
+.slide-text {
+	font-family: 'Lato', sans-serif;
+	color: rgba(0,0,0,0.35);
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	letter-spacing: -0.01em;
+}
+.slide-link {
+	color: #c74c4c;
+	font-size: 	0.75rem;
+	line-height: 1.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	font-weight: 700;
+}
+.slide-count {
+	position: absolute;
+	bottom: -40px;
+	right: 10px;
+	font-size: 118px;
+	color: rgba(0,0,0,0.03);
+	letter-spacing: -0.02em;
+	font-weight: 700;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 61.25em) { 
+	.slide-img img {
+		height: 300px;
+	}
+	.slider-content {
+		min-height: 300px;
+	}
+	.slide-title {
+		left: 0;
+	}
+	.slick-dots {
+	    top: 50%;
+	    right: 50%;
+    	transform: translateX(50%);
+	}
+	.slick-dots li {
+		display: inline-block;
+		margin: 0 15px;
+	}
+    
+}
